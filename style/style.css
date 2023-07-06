@@ -1,0 +1,282 @@
+.container-nav{
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+li>a{
+    padding: 8px 24px;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 13, 13);
+    text-align: center;
+    padding: 20px;
+    
+
+    
+}
+.nav-ul{
+    display: flex;
+    align-items: center;
+    
+}
+nav ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+    margin-right:20px;
+}
+nav a{
+    color: rgb(250, 250, 250) ;
+    text-decoration: none;
+    padding: 5px;
+
+}
+nav a:hover{
+    color: rgb(144, 0, 240);
+}
+.button-menu-toggle{
+    display: none;
+}
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+
+}
+.overlay-content, .overlay{
+    display: none;
+}
+
+
+@media (max-width:768px){
+    .column{
+        flex: 100%;
+    }
+    .nav-ul{
+        display: none;
+    }
+    .button-menu-toggle{
+        display: inherit;
+        background-color: rgb(95, 0, 57);
+        border: none;
+        border-radius: 50px;
+        padding: 0 24px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .nav-ul.nav-ul-responsive{
+        position: absolute;
+        display: flex;
+        background-color: rgb(95, 0, 57);
+        width: 100%;
+        height: 100%;
+        top: 70px;
+        left: 0;
+        flex-direction: column;
+        padding-top: 200px;
+        align-items: center;
+        gap:70px;
+        font-size: 40px;
+      
+    }
+    .header .overlay a{
+        font-size: 20px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+
+    }
+
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-family: monospace;
+}
+.div-principal{
+    min-height:100vh;
+    margin: 0%;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(/gifprincipal.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    
+}
+.sobre-mi{
+    font-size: 25px;
+    min-height: 50vh;
+    border:  red;
+    margin: 5%;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    
+
+    
+    
+}
+.tex-sobremi{
+    margin: 20px;
+    font-size: 20px;
+}
+
+
+.habilidades-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 60px;
+    justify-items: center;
+    
+    
+    
+
+}
+.htmls, .csss, .java {
+    width: 50%;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .sobre-mi {
+      grid-template-columns: 1fr;
+    }
+  }
+
+ .border{
+    border-bottom: 2px solid rgb(226, 6, 255);
+    box-shadow:  0px 1px rgb(224, 204, 226);
+    margin: 0 60px 60px 60px  ;
+ }   
+
+ .misproyectos{
+    min-height: 100vh;
+    text-align: center;
+    
+ }
+ .proyectos{
+    width: 50%;
+    height: 80vh;
+    margin: 20px auto;
+    border:1px darkkhaki dashed;
+    display: flex;
+}
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+.contacto{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.contac{ 
+    margin: 5px;
+    font-size: 15px;
+    display: center;
+
+}
+.contac-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+   
+}
+.instagram, .whatsapp, .lnk{
+    width:10%;
+    margin-bottom: 10px;
+    
+}
+.container_contact{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+
+.contac-icons-principal{
+    margin: 20px auto ;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    
+}
+    
+.instagram-p{
+    width: 50px;
+    height:50px;
+} 
+.whatsapp-p {
+    width: 50px;
+    height:50px;
+} 
+.lnk-p{
+    width: 50px;
+    height:50px;
+} 
+@media (max-width: 600px) {
+    .instagram, .whatsapp, .lnk {
+     width: 15%;
+ }
+}
+.borderFoot{
+    margin: 10px;
+}
+
+.foot{
+    background-color: rgba(41, 2, 56, 0.432);
+    text-align: center;
+    border-top: 1px solid rgba(247, 0, 255, 0.349);
+    
+}
